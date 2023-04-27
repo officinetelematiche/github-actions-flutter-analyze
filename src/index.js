@@ -40,7 +40,7 @@ async function analyze(workingDirectory) {
   const args = ['--format', 'machine'];
   args.push('.');
 
-  await exec.exec('dart analyze', args, options);
+  await exec.exec('flutter analyze', args, options);
 
   let errorCount = 0;
   let warningCount = 0;
